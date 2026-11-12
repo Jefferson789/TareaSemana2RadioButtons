@@ -14,11 +14,11 @@
             android:id="@+id/tvTituloMenu"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Ejercicios con RadioButtons"
-            android:textSize="24sp"
-            android:textStyle="bold"
             android:gravity="center"
-            android:paddingBottom="24dp" />
+            android:paddingBottom="24dp"
+            android:text="Tarea Jefferson Enriquez RadioButtons"
+            android:textSize="24sp"
+            android:textStyle="bold" />
 
         <Button
             android:id="@+id/btnEncuesta"

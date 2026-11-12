@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/mainQuiz"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="24dp">
+
+        <TextView
+            android:id="@+id/tvTituloQuiz"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Quiz Simple"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:paddingBottom="16dp" />
+
+        <TextView
+            android:id="@+id/tvInstruccionesQuiz"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Responde las 3 preguntas y presiona Calcular puntaje."
+            android:textSize="16sp"
+            android:paddingBottom="20dp" />
+
+        <!-- Pregunta 1 -->
+        <TextView
+            android:id="@+id/tvPregunta1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="1. ¿Qué lenguaje usamos en este proyecto?"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <RadioGroup
+            android:id="@+id/rgPregunta1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingBottom="16dp">
+
+            <RadioButton
+                android:id="@+id/rbP1Java"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Java" />
+
+            <RadioButton
+                android:id="@+id/rbP1Kotlin"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Kotlin" />
+
+            <RadioButton
+                android:id="@+id/rbP1Python"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Python" />
+
+        </RadioGroup>
+
+        <TextView
+            android:id="@+id/tvPregunta2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="2. ¿Qué componente permite seleccionar una sola opción?"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <RadioGroup
+            android:id="@+id/rgPregunta2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingBottom="16dp">
+
+            <RadioButton
+                android:id="@+id/rbP2CheckBox"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="CheckBox" />
+
+            <RadioButton
+                android:id="@+id/rbP2Spinner"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Spinner" />
+
+            <RadioButton
+                android:id="@+id/rbP2RadioButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="RadioButton" />
+
+        </RadioGroup>
+
+        <TextView
+            android:id="@+id/tvPregunta3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="3. ¿En qué archivo se define el diseño visual con Views?"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <RadioGroup
+            android:id="@+id/rgPregunta3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingBottom="16dp">
+
+            <RadioButton
+                android:id="@+id/rbP3Xml"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="En un archivo XML de layout" />
+
+            <RadioButton
+                android:id="@+id/rbP3Manifest"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="En AndroidManifest.xml" />
+
+            <RadioButton
+                android:id="@+id/rbP3Gradle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="En build.gradle" />
+
+        </RadioGroup>
+
+        <Button
+            android:id="@+id/btnCalcularPuntaje"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Calcular puntaje"
+            android:layout_marginTop="8dp" />
+
+        <Button
+            android:id="@+id/btnReiniciarQuiz"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Reiniciar quiz"
+            android:layout_marginTop="12dp" />
+
+        <TextView
+            android:id="@+id/tvResultadoQuiz"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Aquí aparecerá tu puntaje final."
+            android:textSize="18sp"
+            android:paddingTop="24dp" />
+
+    </LinearLayout>
+
+</ScrollView>

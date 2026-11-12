@@ -39,15 +39,18 @@ class MainActivity : AppCompatActivity() {
         }
 
         btnQuiz.setOnClickListener {
-            Toast.makeText(this, "Ejercicio 3 pendiente", Toast.LENGTH_SHORT).show()
+            val intent = Intent(this, QuizActivity::class.java)
+            startActivity(intent)
         }
 
         btnPropinas.setOnClickListener {
-            Toast.makeText(this, "Ejercicio 4 pendiente", Toast.LENGTH_SHORT).show()
+            val intent = Intent(this, PropinasActivity::class.java)
+            startActivity(intent)
         }
 
         btnConversor.setOnClickListener {
-            Toast.makeText(this, "Ejercicio 5 pendiente", Toast.LENGTH_SHORT).show()
+            val intent = Intent(this, ConversorActivity::class.java)
+            startActivity(intent)
         }
     }
 }

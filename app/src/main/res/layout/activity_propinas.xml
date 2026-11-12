@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/mainPropinas"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="24dp">
+
+        <TextView
+            android:id="@+id/tvTituloPropinas"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Calculadora de Propinas"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:paddingBottom="16dp" />
+
+        <TextView
+            android:id="@+id/tvInstruccionesPropinas"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Ingresa el monto de la cuenta y selecciona el porcentaje de propina."
+            android:textSize="16sp"
+            android:paddingBottom="16dp" />
+
+        <EditText
+            android:id="@+id/etMonto"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Monto de la cuenta"
+            android:inputType="numberDecimal"
+            android:minHeight="48dp" />
+
+        <TextView
+            android:id="@+id/tvPorcentaje"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Porcentaje de propina:"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:paddingTop="20dp"
+            android:paddingBottom="8dp" />
+
+        <RadioGroup
+            android:id="@+id/rgPorcentaje"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RadioButton
+                android:id="@+id/rbDiez"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="10%" />
+
+            <RadioButton
+                android:id="@+id/rbQuince"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="15%" />
+
+            <RadioButton
+                android:id="@+id/rbVeinte"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="20%" />
+
+        </RadioGroup>
+
+        <Button
+            android:id="@+id/btnCalcularPropina"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Calcular propina"
+            android:layout_marginTop="20dp" />
+
+        <Button
+            android:id="@+id/btnLimpiarPropinas"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Limpiar"
+            android:layout_marginTop="12dp" />
+
+        <TextView
+            android:id="@+id/tvResultadoPropinas"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Aquí aparecerá el cálculo de la propina."
+            android:textSize="18sp"
+            android:paddingTop="24dp" />
+
+    </LinearLayout>
+
+</ScrollView>

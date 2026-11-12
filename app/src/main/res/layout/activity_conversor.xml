@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/mainConversor"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="24dp">
+
+        <TextView
+            android:id="@+id/tvTituloConversor"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Conversor de Unidades"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:paddingBottom="16dp" />
+
+        <TextView
+            android:id="@+id/tvTipoConversion"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Tipo de conversión:"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:paddingBottom="8dp" />
+
+        <RadioGroup
+            android:id="@+id/rgTipoConversion"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RadioButton
+                android:id="@+id/rbLongitud"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Longitud" />
+
+            <RadioButton
+                android:id="@+id/rbPeso"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Peso" />
+
+            <RadioButton
+                android:id="@+id/rbTemperatura"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Temperatura" />
+
+        </RadioGroup>
+
+        <LinearLayout
+            android:id="@+id/layoutCampos"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:visibility="gone"
+            android:paddingTop="20dp">
+
+            <TextView
+                android:id="@+id/tvDescripcionTipo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:textSize="16sp"
+                android:paddingBottom="12dp" />
+
+            <EditText
+                android:id="@+id/etValor"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Valor a convertir"
+                android:inputType="numberDecimal|numberSigned"
+                android:minHeight="48dp" />
+
+            <TextView
+                android:id="@+id/tvUnidadOrigen"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Convertir desde:"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:paddingTop="16dp"
+                android:paddingBottom="8dp" />
+
+            <RadioGroup
+                android:id="@+id/rgUnidadOrigen"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <RadioButton
+                    android:id="@+id/rbOrigen1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Unidad 1" />
+
+                <RadioButton
+                    android:id="@+id/rbOrigen2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Unidad 2" />
+
+                <RadioButton
+                    android:id="@+id/rbOrigen3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Unidad 3" />
+
+            </RadioGroup>
+
+            <TextView
+                android:id="@+id/tvUnidadDestino"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Convertir hacia:"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:paddingTop="16dp"
+                android:paddingBottom="8dp" />
+
+            <RadioGroup
+                android:id="@+id/rgUnidadDestino"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <RadioButton
+                    android:id="@+id/rbDestino1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Unidad 1" />
+
+                <RadioButton
+                    android:id="@+id/rbDestino2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Unidad 2" />
+
+                <RadioButton
+                    android:id="@+id/rbDestino3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Unidad 3" />
+
+            </RadioGroup>
+
+            <Button
+                android:id="@+id/btnConvertir"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Convertir"
+                android:layout_marginTop="20dp" />
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btnLimpiarConversor"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Limpiar"
+            android:layout_marginTop="12dp" />
+
+        <TextView
+            android:id="@+id/tvResultadoConversor"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Selecciona un tipo de conversión para comenzar."
+            android:textSize="18sp"
+            android:paddingTop="24dp" />
+
+    </LinearLayout>
+
+</ScrollView>

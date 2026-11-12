@@ -19,6 +19,15 @@
             android:name=".TemaActivity"
             android:exported="false" />
         <activity
+            android:name=".QuizActivity"
+            android:exported="false" />
+        <activity
+            android:name=".PropinasActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ConversorActivity"
+            android:exported="false" />
+        <activity
             android:name=".MainActivity"
             android:exported="true"
             android:windowSoftInputMode="adjustResize" >
