@@ -1,0 +1,44 @@
+# Archivos compilados y cachés de Gradle
+*.apk
+*.aar
+*.ap_
+*.aab
+*.dex
+*.class
+bin/
+gen/
+out/
+release/
+.gradle/
+build/
+**/build/
+
+# Configuración local de la PC (rutas del SDK, claves locales)
+local.properties
+
+# Archivos de Android Studio / IntelliJ IDEA
+*.iml
+.idea/workspace.xml
+.idea/tasks.xml
+.idea/gradle.xml
+.idea/assetWizardSettings.xml
+.idea/dictionaries
+.idea/libraries
+.idea/caches
+.idea/modules.xml
+.idea/navEditor.xml
+.idea/compiler.xml
+.idea/deploymentTargetDropDown.xml
+.idea/render.experimental.xml
+.idea/misc.xml
+
+# Archivos de sistema operativo (Windows / Mac)
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Logs, profilers y capturas
+*.log
+captures/
+.externalNativeBuild
+.cxx/

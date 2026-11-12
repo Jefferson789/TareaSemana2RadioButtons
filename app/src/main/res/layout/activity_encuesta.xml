@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/mainEncuesta"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="24dp">
+
+        <TextView
+            android:id="@+id/tvTituloEncuesta"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Encuesta de Satisfacción"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:paddingBottom="16dp" />
+
+        <TextView
+            android:id="@+id/tvPreguntaEncuesta"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="¿Cómo calificarías el servicio recibido?"
+            android:textSize="18sp"
+            android:paddingBottom="16dp" />
+
+        <RadioGroup
+            android:id="@+id/rgCalificacion"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RadioButton
+                android:id="@+id/rbExcelente"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Excelente" />
+
+            <RadioButton
+                android:id="@+id/rbBueno"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Bueno" />
+
+            <RadioButton
+                android:id="@+id/rbRegular"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Regular" />
+
+            <RadioButton
+                android:id="@+id/rbMalo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Malo" />
+
+        </RadioGroup>
+
+        <Button
+            android:id="@+id/btnMostrarResumen"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Mostrar resumen"
+            android:layout_marginTop="20dp" />
+
+        <TextView
+            android:id="@+id/tvResultadoEncuesta"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Aquí aparecerá el resumen de tu calificación."
+            android:textSize="18sp"
+            android:paddingTop="24dp" />
+
+    </LinearLayout>
+
+</ScrollView>

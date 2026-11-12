@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/mainTema"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="24dp">
+
+        <TextView
+            android:id="@+id/tvTituloTema"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Selector de Tema"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:paddingBottom="16dp" />
+
+        <TextView
+            android:id="@+id/tvDescripcionTema"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Selecciona el tema que deseas aplicar en la aplicación."
+            android:textSize="18sp"
+            android:paddingBottom="16dp" />
+
+        <RadioGroup
+            android:id="@+id/rgTema"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RadioButton
+                android:id="@+id/rbClaro"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Claro" />
+
+            <RadioButton
+                android:id="@+id/rbOscuro"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Oscuro" />
+
+            <RadioButton
+                android:id="@+id/rbSistema"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Sistema" />
+
+        </RadioGroup>
+
+        <Button
+            android:id="@+id/btnAplicarTema"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Aplicar tema"
+            android:layout_marginTop="20dp" />
+
+        <TextView
+            android:id="@+id/tvTemaActual"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Tema actual: Sistema"
+            android:textSize="18sp"
+            android:paddingTop="24dp" />
+
+    </LinearLayout>
+
+</ScrollView>
